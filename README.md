@@ -17,13 +17,13 @@
 
 ---
 
-## 🎯 Sobre o Projeto
+## Sobre o Projeto
 
 Sistema **full-stack** para gerenciamento de projetos e tarefas com interface moderna e intuitiva. Permite que equipes organizem seu trabalho através de um **quadro Kanban visual**, com autenticação segura, upload de avatares e controle de prioridades.
 
 Desenvolvido com as melhores práticas de desenvolvimento, arquitetura limpa e código escalável.
 
-### 💡 Motivação
+### Motivação
 
 Este projeto foi criado para demonstrar habilidades em:
 - Desenvolvimento full-stack com TypeScript
@@ -36,27 +36,27 @@ Este projeto foi criado para demonstrar habilidades em:
 
 ---
 
-## ✨ Principais Funcionalidades
+## Principais Funcionalidades
 
-### 🔐 Autenticação e Segurança
+### Autenticação e Segurança
 - Sistema completo de autenticação com **JWT**
 - Refresh tokens para sessões longas
 - Senhas criptografadas com **bcrypt**
 - Proteção de rotas no backend e frontend
 
-### 👤 Gerenciamento de Usuários
+### Gerenciamento de Usuários
 - Registro com upload de avatar
 - Edição de perfil
 - Visualização de perfil com estatísticas
 - Sistema de roles (Admin, Manager, Developer, Viewer)
 
-### 📁 Projetos
+### Projetos
 - Criação e gerenciamento de projetos
 - Descrições e metadados
 - Múltiplos membros por projeto
 - Dashboard com projetos recentes
 
-### 📋 Tarefas e Kanban
+### Tarefas e Kanban
 - **Quadro Kanban** com 4 colunas (A Fazer, Em Progresso, Em Revisão, Concluído)
 - **Drag and Drop** para mover tarefas entre status
 - Sistema de **prioridades** colorido (Baixa, Média, Alta, Urgente)
@@ -64,13 +64,13 @@ Este projeto foi criado para demonstrar habilidades em:
 - Sistema de comentários
 - Contadores e métricas
 
-### 📊 Dashboard
+### Dashboard
 - Estatísticas de projetos e tarefas
 - Cards visuais com informações
 - Projetos recentes
 - Perfil do usuário
 
-### 📱 Interface
+### Interface
 - Design **responsivo** para mobile e desktop
 - Animações suaves
 - Tema moderno com gradientes
@@ -78,7 +78,7 @@ Este projeto foi criado para demonstrar habilidades em:
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 ### Backend
 
@@ -113,70 +113,7 @@ Este projeto foi criado para demonstrar habilidades em:
 
 ---
 
-## 📂 Estrutura do Projeto
-
-project-management-platform/
-│
-├── backend/ # Backend Node.js + Express
-│ ├── src/
-│ │ ├── controllers/ # Lógica de negócio
-│ │ │ ├── auth.controller.ts
-│ │ │ ├── project.controller.ts
-│ │ │ └── task.controller.ts
-│ │ ├── middlewares/ # Middlewares personalizados
-│ │ │ ├── auth.middleware.ts
-│ │ │ ├── upload.middleware.ts
-│ │ │ └── error.middleware.ts
-│ │ ├── routes/ # Definição de rotas
-│ │ │ ├── auth.routes.ts
-│ │ │ ├── project.routes.ts
-│ │ │ └── task.routes.ts
-│ │ ├── types/ # Tipos TypeScript
-│ │ └── server.ts # Entrada da aplicação
-│ │
-│ ├── prisma/
-│ │ ├── schema.prisma # Schema do banco de dados
-│ │ └── migrations/ # Histórico de migrations
-│ │
-│ ├── uploads/ # Arquivos enviados (avatares)
-│ ├── .env # Variáveis de ambiente
-│ ├── .env.example # Exemplo de variáveis
-│ ├── package.json
-│ └── tsconfig.json
-│
-└── frontend/ # Frontend React
-├── src/
-│ ├── components/ # Componentes reutilizáveis
-│ │ └── layout/
-│ │ ├── Header.tsx
-│ │ └── PrivateRoute.tsx
-│ │
-│ ├── features/ # Features por módulo
-│ │ ├── auth/ # Autenticação (Login/Registro)
-│ │ ├── dashboard/ # Dashboard principal
-│ │ ├── projects/ # Gerenciamento de projetos
-│ │ ├── tasks/ # Quadro Kanban de tarefas
-│ │ └── profile/ # Perfil do usuário
-│ │
-│ ├── store/ # Configuração Redux
-│ │ ├── store.ts
-│ │ └── hooks.ts
-│ │
-│ ├── services/ # Serviços (API)
-│ │ └── api.ts
-│ │
-│ ├── types/ # Tipos TypeScript
-│ ├── App.tsx # Componente raiz
-│ └── index.tsx # Entrada da aplicação
-│
-├── public/
-├── package.json
-└── tsconfig.json
-
-
----
-
-## 🚀 Como Executar o Projeto
+## Como Executar o Projeto
 
 ### Pré-requisitos
 
@@ -187,13 +124,13 @@ Antes de começar, você precisa ter instalado:
 - [Git](https://git-scm.com/)
 - npm ou yarn
 
-### 1️⃣ Clone o repositório
+### Clone o repositório
 
 git clone https://github.com/seu-usuario/project-management-platform.git
 cd project-management-platform
 
 
-### 2️⃣ Configurar o Backend
+### Configurar o Backend
 
 #### Instalar dependências
 
@@ -211,7 +148,7 @@ JWT_REFRESH_SECRET="seu_jwt_refresh_secret_super_seguro_de_pelo_menos_32_caracte
 PORT=3001
 
 
-> ⚠️ **Importante:** Substitua `usuario` e `senha` pelas credenciais do seu PostgreSQL
+> **Importante:** Substitua `usuario` e `senha` pelas credenciais do seu PostgreSQL
 
 #### Executar migrations do banco de dados
 
@@ -243,9 +180,9 @@ Abra seu navegador e acesse: `http://localhost:3000`
 
 ---
 
-## 📖 Endpoints da API
+## Endpoints da API
 
-### 🔐 Autenticação (`/api/auth`)
+### Autenticação (`/api/auth`)
 
 | Método | Endpoint | Descrição | Autenticação |
 |--------|----------|-----------|--------------|
@@ -255,7 +192,7 @@ Abra seu navegador e acesse: `http://localhost:3000`
 | `PUT` | `/profile` | Atualizar perfil (com avatar) | ✅ |
 | `POST` | `/refresh` | Renovar access token | ❌ |
 
-### 📁 Projetos (`/api/projects`)
+### Projetos (`/api/projects`)
 
 | Método | Endpoint | Descrição | Autenticação |
 |--------|----------|-----------|--------------|
@@ -265,7 +202,7 @@ Abra seu navegador e acesse: `http://localhost:3000`
 | `PUT` | `/:id` | Atualizar projeto | ✅ |
 | `DELETE` | `/:id` | Deletar projeto | ✅ |
 
-### 📋 Tarefas (`/api/tasks`)
+### Tarefas (`/api/tasks`)
 
 | Método | Endpoint | Descrição | Autenticação |
 |--------|----------|-----------|--------------|
@@ -276,7 +213,7 @@ Abra seu navegador e acesse: `http://localhost:3000`
 | `POST` | `/:taskId/comments` | Adicionar comentário | ✅ |
 | `DELETE` | `/:taskId/comments/:commentId` | Deletar comentário | ✅ |
 
-### 📝 Exemplo de Requisição
+### Exemplo de Requisição
 
 **Criar Projeto:**
 
@@ -289,28 +226,9 @@ Content-Type: application/json
 "description": "Descrição do projeto"
 }
 
-
 ---
 
-## 🎨 Screenshots
-
-> 📸 Adicione aqui prints das principais telas do seu projeto
-
-### Dashboard
-![Dashboard](docs/screenshots/dashboard.png)
-*Painel principal com estatísticas e visão geral dos projetos*
-
-### Quadro Kanban
-![Kanban Board](docs/screenshots/kanban.png)
-*Quadro visual com drag-and-drop para organização de tarefas*
-
-### Gerenciamento de Projetos
-![Projects](docs/screenshots/projects.png)
-*Lista de projetos com avatares dos membros da equipe*
-
----
-
-## 🔐 Segurança
+## Segurança
 
 Este projeto implementa diversas boas práticas de segurança:
 
@@ -326,7 +244,7 @@ Este projeto implementa diversas boas práticas de segurança:
 
 ---
 
-## 📈 Melhorias Futuras
+## Melhorias Futuras
 
 Funcionalidades planejadas para próximas versões:
 
@@ -347,7 +265,7 @@ Funcionalidades planejadas para próximas versões:
 
 ---
 
-## 🤝 Contribuindo
+## Contribuindo
 
 Contribuições são sempre bem-vindas! Este é um projeto open-source.
 
@@ -368,7 +286,7 @@ Contribuições são sempre bem-vindas! Este é um projeto open-source.
 
 ---
 
-## 📝 Licença
+## Licença
 
 Este projeto está sob a licença **MIT**. Isso significa que você pode:
 
@@ -378,29 +296,6 @@ Este projeto está sob a licença **MIT**. Isso significa que você pode:
 - ✅ Uso privado
 
 Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
----
-
-## 👨‍💻 Autor
-
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/seu-usuario">
-        <img src="https://github.com/seu-usuario.png" width="100px;" alt="Foto do Autor"/><br>
-        <sub>
-          <b>Roberto Fonseca</b>
-        </sub>
-      </a>
-    </td>
-  </tr>
-</table>
-
-### 📫 Entre em contato:
-
-- 💼 [LinkedIn](https://linkedin.com/in/seu-perfil)
-- 🐱 [GitHub](https://github.com/seu-usuario)
-- 📧 Email: roberto.fonseca@email.com
 
 ---
 
