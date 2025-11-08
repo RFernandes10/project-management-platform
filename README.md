@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📊 Project Management Platform
+# Project Management Platform
 
 ### Plataforma completa de gerenciamento de projetos e tarefas com Kanban
 
@@ -14,19 +14,19 @@
 [![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)](https://www.prisma.io/)
 [![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
 
-[📖 Sobre](#-sobre-o-projeto) • [✨ Features](#-principais-funcionalidades) • [🛠️ Tecnologias](#️-tecnologias-utilizadas) • [🚀 Como Executar](#-como-executar-o-projeto) • [📖 API](#-endpoints-da-api) • [🎨 Screenshots](#-screenshots) • [👨‍💻 Autor](#-autor)
+[Sobre](#-sobre-o-projeto) • [Features](#-principais-funcionalidades) • [Tecnologias](-tecnologias-utilizadas) • [Como Executar](#-como-executar-o-projeto) • [API](#-endpoints-da-api) • [Screenshots](#-screenshots) • [👨‍💻 Roberto Fernandes](#-autor)
 
 </div>
 
 ---
 
-## 🎯 Sobre o Projeto
+## Sobre o Projeto
 
 Sistema **full-stack** para gerenciamento de projetos e tarefas com interface moderna e intuitiva. Permite que equipes organizem seu trabalho através de um **quadro Kanban visual**, com autenticação segura, upload de avatares e controle de prioridades.
 
 Desenvolvido com as melhores práticas de desenvolvimento, arquitetura limpa e código escalável.
 
-### 💡 Motivação
+### Motivação
 
 Este projeto foi criado para demonstrar habilidades em:
 - Desenvolvimento full-stack com TypeScript
@@ -39,27 +39,27 @@ Este projeto foi criado para demonstrar habilidades em:
 
 ---
 
-## ✨ Principais Funcionalidades
+## Principais Funcionalidades
 
-### 🔐 Autenticação e Segurança
+### Autenticação e Segurança
 - Sistema completo de autenticação com **JWT**
 - Refresh tokens para sessões longas
 - Senhas criptografadas com **bcrypt**
 - Proteção de rotas no backend e frontend
 
-### 👤 Gerenciamento de Usuários
+### Gerenciamento de Usuários
 - Registro com upload de avatar
 - Edição de perfil
 - Visualização de perfil com estatísticas
 - Sistema de roles (Admin, Manager, Developer, Viewer)
 
-### 📁 Projetos
+### Projetos
 - Criação e gerenciamento de projetos
 - Descrições e metadados
 - Múltiplos membros por projeto
 - Dashboard com projetos recentes
 
-### 📋 Tarefas e Kanban
+### Tarefas e Kanban
 - **Quadro Kanban** com 4 colunas (A Fazer, Em Progresso, Em Revisão, Concluído)
 - **Drag and Drop** para mover tarefas entre status
 - Sistema de **prioridades** colorido (Baixa, Média, Alta, Urgente)
@@ -67,13 +67,13 @@ Este projeto foi criado para demonstrar habilidades em:
 - Sistema de comentários
 - Contadores e métricas
 
-### 📊 Dashboard
+### Dashboard
 - Estatísticas de projetos e tarefas
 - Cards visuais com informações
 - Projetos recentes
 - Perfil do usuário
 
-### 📱 Interface
+### Interface
 - Design **responsivo** para mobile e desktop
 - Animações suaves
 - Tema moderno com gradientes
@@ -81,7 +81,7 @@ Este projeto foi criado para demonstrar habilidades em:
 
 ---
 
-## 🎨 Screenshots
+## Screenshots
 
 ### Dashboard
 ![Dashboard](docs/screenshots/dashboard.png)
@@ -101,7 +101,7 @@ Este projeto foi criado para demonstrar habilidades em:
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 ### Backend
 
@@ -136,7 +136,7 @@ Este projeto foi criado para demonstrar habilidades em:
 
 ---
 
-## 🚀 Como Executar o Projeto
+## Como Executar o Projeto
 
 ### Pré-requisitos
 
@@ -147,12 +147,12 @@ Antes de começar, você precisa ter instalado:
 - [Git](https://git-scm.com/)
 - npm ou yarn
 
-### 1️⃣ Clone o repositório
+### Clone o repositório
 git clone https://github.com/RFernandes10/project-management-platform.git
 cd project-management-platform
 ---
 
-### 2️⃣ Configurar o Backend
+### Configurar o Backend
 
 #### Instalar dependências
 cd backend
@@ -171,7 +171,7 @@ PORT=3001
 ---
 
 
-> ⚠️ **Importante:** Substitua `usuario` e `senha` pelas credenciais do seu PostgreSQL
+> **Importante:** Substitua `usuario` e `senha` pelas credenciais do seu PostgreSQL
 
 #### Executar migrations do banco de dados
 npx prisma migrate dev
@@ -188,7 +188,7 @@ npm run dev
 
 ✅ O backend estará rodando em `http://localhost:3001`
 
-### 3️⃣ Configurar o Frontend
+### Configurar o Frontend
 
 Abra um **novo terminal**:
 
@@ -201,15 +201,15 @@ npm start
 
 ✅ O frontend estará rodando em `http://localhost:3000`
 
-### 4️⃣ Acessar a aplicação
+### Acessar a aplicação
 
 Abra seu navegador e acesse: `http://localhost:3000`
 
 ---
 
-## 📖 Endpoints da API
+## Endpoints da API
 
-### 🔐 Autenticação (`/api/auth`)
+### Autenticação (`/api/auth`)
 
 | Método | Endpoint | Descrição | Autenticação |
 |--------|----------|-----------|--------------|
@@ -219,7 +219,7 @@ Abra seu navegador e acesse: `http://localhost:3000`
 | `PUT` | `/profile` | Atualizar perfil (com avatar) | ✅ |
 | `POST` | `/refresh` | Renovar access token | ❌ |
 
-### 📁 Projetos (`/api/projects`)
+### Projetos (`/api/projects`)
 
 | Método | Endpoint | Descrição | Autenticação |
 |--------|----------|-----------|--------------|
@@ -229,7 +229,7 @@ Abra seu navegador e acesse: `http://localhost:3000`
 | `PUT` | `/:id` | Atualizar projeto | ✅ |
 | `DELETE` | `/:id` | Deletar projeto | ✅ |
 
-### 📋 Tarefas (`/api/tasks`)
+### Tarefas (`/api/tasks`)
 
 | Método | Endpoint | Descrição | Autenticação |
 |--------|----------|-----------|--------------|
@@ -240,7 +240,7 @@ Abra seu navegador e acesse: `http://localhost:3000`
 | `POST` | `/:taskId/comments` | Adicionar comentário | ✅ |
 | `DELETE` | `/:taskId/comments/:commentId` | Deletar comentário | ✅ |
 
-### 📝 Exemplo de Requisição
+### Exemplo de Requisição
 
 **Criar Projeto:**
 POST http://localhost:3001/api/projects
@@ -257,7 +257,7 @@ Content-Type: application/json
 
 ---
 
-## 🔐 Segurança
+## Segurança
 
 Este projeto implementa diversas boas práticas de segurança:
 
@@ -273,7 +273,7 @@ Este projeto implementa diversas boas práticas de segurança:
 
 ---
 
-## 📈 Melhorias Futuras
+## Melhorias Futuras
 
 Funcionalidades planejadas para próximas versões:
 
@@ -294,7 +294,7 @@ Funcionalidades planejadas para próximas versões:
 
 ---
 
-## 🤝 Contribuindo
+## Contribuindo
 
 Contribuições são sempre bem-vindas! Este é um projeto open-source.
 
@@ -315,7 +315,7 @@ Contribuições são sempre bem-vindas! Este é um projeto open-source.
 
 ---
 
-## 📝 Licença
+## Licença
 
 Este projeto está sob a licença **MIT**. Isso significa que você pode:
 
@@ -343,11 +343,11 @@ Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
   </tr>
 </table>
 
-### 📫 Entre em contato:
+### Entre em contato:
 
-- 💼 [LinkedIn](https://www.linkedin.com/in/roberto-wolowitz/)
-- 🐱 [GitHub](https://github.com/RFernandes10)
-- 📧 Email: robertofernandes144@gmail.com
+- [LinkedIn](https://www.linkedin.com/in/roberto-wolowitz/)
+- [GitHub](https://github.com/RFernandes10)
+- Email: robertofernandes144@gmail.com
 
 ---
 
