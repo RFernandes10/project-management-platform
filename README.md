@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📊 Project Management Platform
+# Project Management Platform
 
 ### Plataforma completa de gerenciamento de projetos e tarefas com Kanban
 
@@ -11,7 +11,7 @@
 [![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)](https://www.prisma.io/)
 [![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
 
-[📖 Sobre](#-sobre-o-projeto) • [✨ Features](#-principais-funcionalidades) • [🛠️ Tecnologias](#️-tecnologias-utilizadas) • [🚀 Como Executar](#-como-executar-o-projeto) • [📖 API](#-endpoints-da-api) • [👨‍💻 Autor](#-autor)
+[Sobre](#-sobre-o-projeto) • [Features](#-principais-funcionalidades) • [Tecnologias](-tecnologias-utilizadas) • [Como Executar](#-como-executar-o-projeto) • [API](#-endpoints-da-api) • [Roberto Fernandes](#-autor)
 
 </div>
 
