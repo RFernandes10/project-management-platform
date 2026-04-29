@@ -1,110 +1,71 @@
+# 📊 Project Management Platform
+
+Plataforma full-stack de gerenciamento de projetos e tarefas com metodologia **Kanban**, desenvolvida com React, TypeScript, Node.js e PostgreSQL.
+
 <div align="center">
-
-# Project Management Platform
-
-### Plataforma completa de gerenciamento de projetos e tarefas com Kanban
-
-![Status](https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
-
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
-[![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
-[![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)](https://www.prisma.io/)
-[![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com/)
-
-[Sobre](#-sobre-o-projeto) • [Features](#-principais-funcionalidades) • [Tecnologias](-tecnologias-utilizadas) • [Como Executar](#-como-executar-o-projeto) • [API](#-endpoints-da-api) • [Screenshots](#-screenshots) • [👨‍💻 Roberto Fernandes](#-autor)
-
+  <img src="https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" />
+  <br/>
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=prisma&logoColor=white" />
 </div>
 
 ---
 
-## Sobre o Projeto
+## ✨ Funcionalidades Principais
 
-Sistema **full-stack** para gerenciamento de projetos e tarefas com interface moderna e intuitiva. Permite que equipes organizem seu trabalho através de um **quadro Kanban visual**, com autenticação segura, upload de avatares e controle de prioridades.
-
-Desenvolvido com as melhores práticas de desenvolvimento, arquitetura limpa e código escalável.
-
-### Motivação
-
-Este projeto foi criado para demonstrar habilidades em:
-- Desenvolvimento full-stack com TypeScript
-- Arquitetura de APIs RESTful
-- Gerenciamento de estado com Redux
-- Autenticação e autorização
-- Upload e gerenciamento de arquivos
-- Design de interfaces modernas
-- Manipulação de banco de dados relacional
-
----
-
-## Principais Funcionalidades
-
-### Autenticação e Segurança
+### 👤 Autenticação e Segurança
 - Sistema completo de autenticação com **JWT**
 - Refresh tokens para sessões longas
 - Senhas criptografadas com **bcrypt**
 - Proteção de rotas no backend e frontend
+- Upload de avatar na criação da conta
 
-### Gerenciamento de Usuários
-- Registro com upload de avatar
-- Edição de perfil
-- Visualização de perfil com estatísticas
+### 📋 Gerenciamento de Projetos
+- Criação e gerenciamento de múltiplos projetos
+- Descrições e metadados detalhados
+- Adição de múltiplos membros por projeto
+- Dashboard com projetos recentes
 - Sistema de roles (Admin, Manager, Developer, Viewer)
 
-### Projetos
-- Criação e gerenciamento de projetos
-- Descrições e metadados
-- Múltiplos membros por projeto
-- Dashboard com projetos recentes
-
-### Tarefas e Kanban
+### 📌 Tarefas e Kanban
 - **Quadro Kanban** com 4 colunas (A Fazer, Em Progresso, Em Revisão, Concluído)
 - **Drag and Drop** para mover tarefas entre status
 - Sistema de **prioridades** colorido (Baixa, Média, Alta, Urgente)
-- Atribuição de tarefas para membros
-- Sistema de comentários
-- Contadores e métricas
+- Atribuição de tarefas para membros da equipe
+- Sistema de comentários em tarefas
+- Contadores e métricas de progresso
 
-### Dashboard
+### 📈 Dashboard
 - Estatísticas de projetos e tarefas
 - Cards visuais com informações
 - Projetos recentes
-- Perfil do usuário
-
-### Interface
-- Design **responsivo** para mobile e desktop
-- Animações suaves
-- Tema moderno com gradientes
-- Feedback visual em todas as ações
+- Perfil do usuário com estatísticas
 
 ---
 
-## Screenshots
+## 📸 Screenshots
 
 ### Dashboard
-![Dashboard](docs/screenshots/dashboard.png)
-*Painel principal com estatísticas e visão geral dos projetos*
+![Dashboard](./docs/screenshots/dashboard.png)
 
 ### Quadro Kanban
-![Kanban Board](docs/screenshots/kanban.png)
-*Quadro visual com drag-and-drop para organização de tarefas*
+![Kanban Board](./docs/screenshots/kanban.png)
 
 ### Gerenciamento de Projetos
-![Projects](docs/screenshots/projects.png)
-*Lista de projetos com avatares dos membros da equipe*
+![Projects](./docs/screenshots/projects.png)
 
 ### Login
-![Login](docs/screenshots/login.png)
-*Tela de autenticação com upload de avatar*
+![Login](./docs/screenshots/login.png)
 
 ---
 
-## Tecnologias Utilizadas
+## 🛠 Tecnologias Utilizadas
 
 ### Backend
-
 | Tecnologia | Descrição |
 |------------|-----------|
 | **Node.js** | Runtime JavaScript |
@@ -117,7 +78,6 @@ Este projeto foi criado para demonstrar habilidades em:
 | **Bcrypt** | Hash seguro de senhas |
 
 ### Frontend
-
 | Tecnologia | Descrição |
 |------------|-----------|
 | **React 18** | Biblioteca para construção de interfaces |
@@ -128,7 +88,6 @@ Este projeto foi criado para demonstrar habilidades em:
 | **CSS3** | Estilização moderna com Flexbox/Grid |
 
 ### Ferramentas de Desenvolvimento
-
 - **ts-node-dev** - Desenvolvimento com hot reload
 - **Prisma Studio** - Interface visual do banco de dados
 - **ESLint** - Linter para padronização de código
@@ -136,83 +95,70 @@ Este projeto foi criado para demonstrar habilidades em:
 
 ---
 
-## Como Executar o Projeto
+## 🚀 Como Executar o Projeto
 
 ### Pré-requisitos
-
-Antes de começar, você precisa ter instalado:
-
 - [Node.js](https://nodejs.org/) (versão 18 ou superior)
 - [PostgreSQL](https://www.postgresql.org/) (versão 12 ou superior)
 - [Git](https://git-scm.com/)
 - npm ou yarn
 
-### Clone o repositório
+### 1. Clone o repositório
+```bash
 git clone https://github.com/RFernandes10/project-management-platform.git
 cd project-management-platform
----
+```
 
-### Configurar o Backend
+### 2. Configurar o Backend
 
-#### Instalar dependências
+```bash
 cd backend
 npm install
-
----
-
-#### Configurar variáveis de ambiente
+```
 
 Crie um arquivo `.env` na pasta `backend`:
+```env
 DATABASE_URL="postgresql://usuario:senha@localhost:5432/project_management?schema=public"
 JWT_SECRET="seu_jwt_secret_super_seguro_de_pelo_menos_32_caracteres"
 JWT_REFRESH_SECRET="seu_jwt_refresh_secret_super_seguro_de_pelo_menos_32_caracteres"
 PORT=3001
+```
 
----
-
-
-> **Importante:** Substitua `usuario` e `senha` pelas credenciais do seu PostgreSQL
-
-#### Executar migrations do banco de dados
+Execute as migrations do banco de dados:
+```bash
 npx prisma migrate dev
 npx prisma generate
+```
 
----
-
-
-#### Iniciar o servidor
+Inicie o servidor:
+```bash
 npm run dev
-
----
-
+```
 
 ✅ O backend estará rodando em `http://localhost:3001`
 
-### Configurar o Frontend
+### 3. Configurar o Frontend
 
 Abra um **novo terminal**:
-
+```bash
 cd frontend
 npm install
 npm start
-
----
-
+```
 
 ✅ O frontend estará rodando em `http://localhost:3000`
 
-### Acessar a aplicação
-
+### 4. Acessar a aplicação
 Abra seu navegador e acesse: `http://localhost:3000`
 
 ---
 
-## Endpoints da API
+## 📡 Endpoints da API
 
 ### Autenticação (`/api/auth`)
 
 | Método | Endpoint | Descrição | Autenticação |
-|--------|----------|-----------|--------------|
+|--------|----------|------------|--------------|
 | `POST` | `/register` | Registrar novo usuário (com avatar) | ❌ |
 | `POST` | `/login` | Fazer login | ❌ |
 | `GET` | `/me` | Obter dados do usuário logado | ✅ |
@@ -222,7 +168,7 @@ Abra seu navegador e acesse: `http://localhost:3000`
 ### Projetos (`/api/projects`)
 
 | Método | Endpoint | Descrição | Autenticação |
-|--------|----------|-----------|--------------|
+|--------|----------|------------|--------------|
 | `GET` | `/` | Listar todos os projetos do usuário | ✅ |
 | `POST` | `/` | Criar novo projeto | ✅ |
 | `GET` | `/:id` | Obter projeto específico | ✅ |
@@ -232,7 +178,7 @@ Abra seu navegador e acesse: `http://localhost:3000`
 ### Tarefas (`/api/tasks`)
 
 | Método | Endpoint | Descrição | Autenticação |
-|--------|----------|-----------|--------------|
+|--------|----------|------------|--------------|
 | `GET` | `/project/:projectId` | Listar tarefas de um projeto | ✅ |
 | `POST` | `/` | Criar nova tarefa | ✅ |
 | `PUT` | `/:id` | Atualizar tarefa (status, prioridade, etc) | ✅ |
@@ -240,24 +186,9 @@ Abra seu navegador e acesse: `http://localhost:3000`
 | `POST` | `/:taskId/comments` | Adicionar comentário | ✅ |
 | `DELETE` | `/:taskId/comments/:commentId` | Deletar comentário | ✅ |
 
-### Exemplo de Requisição
-
-**Criar Projeto:**
-POST http://localhost:3001/api/projects
-Authorization: Bearer {seu_token}
-Content-Type: application/json
-
-{
-"name": "Meu Projeto",
-"description": "Descrição do projeto"
-}
-
 ---
 
-
----
-
-## Segurança
+## 🔐 Segurança
 
 Este projeto implementa diversas boas práticas de segurança:
 
@@ -273,9 +204,20 @@ Este projeto implementa diversas boas práticas de segurança:
 
 ---
 
-## Melhorias Futuras
+## 🎯 Arquitetura e Diferenciais
 
-Funcionalidades planejadas para próximas versões:
+- **Full-Stack TypeScript** - Tipagem em todo o stack
+- **Redux Toolkit** - Gerenciamento de estado previsível
+- **Drag and Drop** - Interface Kanban interativa
+- **Prisma ORM** - Tipagem segura no acesso ao banco
+- **JWT + Refresh Tokens** - Autenticação robusta
+- **Upload de Arquivos** - Avatares com Multer
+- **Design Responsivo** - Mobile-first approach
+- **Código Limpo** - Separação de responsabilidades
+
+---
+
+## 📌 Melhorias Futuras
 
 - [ ] Notificações em tempo real com **WebSocket**
 - [ ] Sistema de permissões granular por projeto
@@ -294,40 +236,6 @@ Funcionalidades planejadas para próximas versões:
 
 ---
 
-## Contribuindo
-
-Contribuições são sempre bem-vindas! Este é um projeto open-source.
-
-### Como contribuir:
-
-1. Faça um **fork** do projeto
-2. Crie uma **branch** para sua feature (`git checkout -b feature/MinhaFeature`)
-3. Faça **commit** das suas mudanças (`git commit -m 'Adiciona MinhaFeature'`)
-4. Faça **push** para a branch (`git push origin feature/MinhaFeature`)
-5. Abra um **Pull Request**
-
-### Diretrizes:
-
-- Mantenha o código limpo e bem documentado
-- Siga os padrões de código existentes
-- Adicione testes para novas funcionalidades
-- Atualize a documentação quando necessário
-
----
-
-## Licença
-
-Este projeto está sob a licença **MIT**. Isso significa que você pode:
-
-- ✅ Usar comercialmente
-- ✅ Modificar
-- ✅ Distribuir
-- ✅ Uso privado
-
-Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
----
-
 ## 👨‍💻 Autor
 
 <table>
@@ -335,16 +243,13 @@ Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
     <td align="center">
       <a href="https://github.com/RFernandes10">
         <img src="https://github.com/RFernandes10.png" width="100px;" alt="Roberto Fernandes"/><br>
-        <sub>
-          <b>Roberto Fernandes</b>
-        </sub>
+        <sub><b>Roberto Fernandes</b></sub>
       </a>
     </td>
   </tr>
 </table>
 
 ### Entre em contato:
-
 - [LinkedIn](https://www.linkedin.com/in/roberto-wolowitz/)
 - [GitHub](https://github.com/RFernandes10)
 - Email: robertofernandes144@gmail.com
@@ -352,16 +257,6 @@ Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 ---
 
 <div align="center">
-
-### ⭐ Se este projeto foi útil para você, considere dar uma estrela!
-
-Feito com ❤️ e ☕ por **Roberto Fernandes**
-
+  <h3>⭐ Se este projeto foi útil para você, considere dar uma estrela!</h3>
+  <p>Feito com ❤️ e ☕ por <strong>Roberto Fernandes</strong></p>
 </div>
-
-
-
-
-
-
-
